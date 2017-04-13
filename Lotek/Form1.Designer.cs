@@ -30,8 +30,9 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.lbl_wygrane_Plus = new System.Windows.Forms.Label();
             this.informacja_label = new System.Windows.Forms.Label();
-            this.Wygrane_richTextBox = new System.Windows.Forms.RichTextBox();
+            this.WygraneLotto_richTextBox = new System.Windows.Forms.RichTextBox();
             this.plus6_lbl = new System.Windows.Forms.Label();
             this.plus5_lbl = new System.Windows.Forms.Label();
             this.plus4_lbl = new System.Windows.Forms.Label();
@@ -55,6 +56,7 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.WygraneLottoPlus_RBox = new System.Windows.Forms.RichTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.SuspendLayout();
@@ -71,13 +73,15 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(554, 338);
+            this.tabControl1.Size = new System.Drawing.Size(554, 387);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.WygraneLottoPlus_RBox);
+            this.tabPage3.Controls.Add(this.lbl_wygrane_Plus);
             this.tabPage3.Controls.Add(this.informacja_label);
-            this.tabPage3.Controls.Add(this.Wygrane_richTextBox);
+            this.tabPage3.Controls.Add(this.WygraneLotto_richTextBox);
             this.tabPage3.Controls.Add(this.plus6_lbl);
             this.tabPage3.Controls.Add(this.plus5_lbl);
             this.tabPage3.Controls.Add(this.plus4_lbl);
@@ -100,29 +104,38 @@
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(546, 312);
+            this.tabPage3.Size = new System.Drawing.Size(546, 361);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Lotto";
             this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Enter += new System.EventHandler(this.tabPage3_Enter);
             // 
+            // lbl_wygrane_Plus
+            // 
+            this.lbl_wygrane_Plus.AutoSize = true;
+            this.lbl_wygrane_Plus.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_wygrane_Plus.Location = new System.Drawing.Point(290, 75);
+            this.lbl_wygrane_Plus.Name = "lbl_wygrane_Plus";
+            this.lbl_wygrane_Plus.Size = new System.Drawing.Size(0, 13);
+            this.lbl_wygrane_Plus.TabIndex = 24;
+            // 
             // informacja_label
             // 
             this.informacja_label.AutoSize = true;
-            this.informacja_label.Font = new System.Drawing.Font("Lucida Sans Typewriter", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.informacja_label.Location = new System.Drawing.Point(273, 20);
+            this.informacja_label.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.informacja_label.Location = new System.Drawing.Point(290, 48);
             this.informacja_label.Name = "informacja_label";
-            this.informacja_label.Size = new System.Drawing.Size(0, 18);
+            this.informacja_label.Size = new System.Drawing.Size(0, 13);
             this.informacja_label.TabIndex = 23;
             // 
-            // Wygrane_richTextBox
+            // WygraneLotto_richTextBox
             // 
-            this.Wygrane_richTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.Wygrane_richTextBox.Location = new System.Drawing.Point(276, 169);
-            this.Wygrane_richTextBox.Name = "Wygrane_richTextBox";
-            this.Wygrane_richTextBox.Size = new System.Drawing.Size(259, 131);
-            this.Wygrane_richTextBox.TabIndex = 22;
-            this.Wygrane_richTextBox.Text = "";
+            this.WygraneLotto_richTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.WygraneLotto_richTextBox.Location = new System.Drawing.Point(18, 208);
+            this.WygraneLotto_richTextBox.Name = "WygraneLotto_richTextBox";
+            this.WygraneLotto_richTextBox.Size = new System.Drawing.Size(253, 131);
+            this.WygraneLotto_richTextBox.TabIndex = 22;
+            this.WygraneLotto_richTextBox.Text = "";
             // 
             // plus6_lbl
             // 
@@ -324,7 +337,7 @@
             // 
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(546, 312);
+            this.tabPage4.Size = new System.Drawing.Size(546, 361);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Mini Lotto";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -333,7 +346,7 @@
             // 
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(546, 312);
+            this.tabPage5.Size = new System.Drawing.Size(546, 361);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "Multi";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -342,16 +355,25 @@
             // 
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(546, 312);
+            this.tabPage6.Size = new System.Drawing.Size(546, 361);
             this.tabPage6.TabIndex = 3;
             this.tabPage6.Text = "Ekstra Pensja";
             this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // WygraneLottoPlus_RBox
+            // 
+            this.WygraneLottoPlus_RBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.WygraneLottoPlus_RBox.Location = new System.Drawing.Point(277, 208);
+            this.WygraneLottoPlus_RBox.Name = "WygraneLottoPlus_RBox";
+            this.WygraneLottoPlus_RBox.Size = new System.Drawing.Size(253, 131);
+            this.WygraneLottoPlus_RBox.TabIndex = 25;
+            this.WygraneLottoPlus_RBox.Text = "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(578, 362);
+            this.ClientSize = new System.Drawing.Size(578, 411);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Lotek";
@@ -388,9 +410,11 @@
         private System.Windows.Forms.Label plus3_lbl;
         private System.Windows.Forms.Label plus2_lbl;
         private System.Windows.Forms.Label plus1_lbl;
-        private System.Windows.Forms.RichTextBox Wygrane_richTextBox;
+        private System.Windows.Forms.RichTextBox WygraneLotto_richTextBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label informacja_label;
+        private System.Windows.Forms.Label lbl_wygrane_Plus;
+        private System.Windows.Forms.RichTextBox WygraneLottoPlus_RBox;
     }
 }
 

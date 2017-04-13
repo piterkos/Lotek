@@ -1,8 +1,9 @@
 ﻿public enum RodzajGry
 {
-    Lotto,
+    Lotto = 6,
     LottoPlus,
-    LottoMini,
-    MultiMulti,
-    EkstraPensja,
+    LottoMini = 5,
+    MultiMulti = 10,
+    EkstraPensja = 5,
+    
 }
