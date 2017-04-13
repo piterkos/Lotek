@@ -61,6 +61,9 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
@@ -68,7 +71,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(510, 275);
+            this.tabControl1.Size = new System.Drawing.Size(554, 338);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage3
@@ -97,7 +100,7 @@
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(502, 249);
+            this.tabPage3.Size = new System.Drawing.Size(546, 312);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Lotto";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -114,9 +117,10 @@
             // 
             // Wygrane_richTextBox
             // 
-            this.Wygrane_richTextBox.Location = new System.Drawing.Point(276, 111);
+            this.Wygrane_richTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Wygrane_richTextBox.Location = new System.Drawing.Point(276, 169);
             this.Wygrane_richTextBox.Name = "Wygrane_richTextBox";
-            this.Wygrane_richTextBox.Size = new System.Drawing.Size(223, 131);
+            this.Wygrane_richTextBox.Size = new System.Drawing.Size(259, 131);
             this.Wygrane_richTextBox.TabIndex = 22;
             this.Wygrane_richTextBox.Text = "";
             // 
@@ -304,6 +308,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(98, 20);
             this.dateTimePicker1.TabIndex = 1;
+            this.dateTimePicker1.Value = new System.DateTime(2017, 4, 8, 18, 43, 0, 0);
             // 
             // label1
             // 
@@ -319,7 +324,7 @@
             // 
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(502, 249);
+            this.tabPage4.Size = new System.Drawing.Size(546, 312);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Mini Lotto";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -328,7 +333,7 @@
             // 
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(502, 249);
+            this.tabPage5.Size = new System.Drawing.Size(546, 312);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "Multi";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -337,7 +342,7 @@
             // 
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(502, 249);
+            this.tabPage6.Size = new System.Drawing.Size(546, 312);
             this.tabPage6.TabIndex = 3;
             this.tabPage6.Text = "Ekstra Pensja";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -346,7 +351,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(534, 299);
+            this.ClientSize = new System.Drawing.Size(578, 362);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Lotek";
